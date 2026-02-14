@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bari Prajval | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .bg-cream { background-color: #faf9f6; }
+        .text-onyx { color: #1a1a1a; }
+        .accent-gold { color: #b08d57; }
+        .border-gold { border-color: #b08d57; }
+    </style>
+</head>
+<body class="bg-cream text-onyx selection:bg-amber-100">
+
+    <nav class="fixed w-full z-50 bg-cream/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="serif text-xl font-bold tracking-tighter uppercase">B. Prajval</span>
+            <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.2em] font-bold">
+                <a href="#about" class="hover:text-amber-700 transition">About</a>
+                <a href="#experience" class="hover:text-amber-700 transition">Experience</a>
+                <a href="#projects" class="hover:text-amber-700 transition">Projects</a>
+                <a href="#contact" class="hover:text-amber-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="pt-40 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <span class="accent-gold font-semibold tracking-[0.3em] uppercase text-[10px] mb-4 block">Computer Science & Web Development</span>
+            <h1 class="serif text-6xl md:text-8xl leading-tight mb-8">Bari <br> <i class="font-light">Prajval</i></h1>
+            <div class="grid md:grid-cols-2 gap-12">
+                <p class="text-gray-500 text-lg leading-relaxed italic">
+                    "Transforming complex logic into elegant, user-centric digital environments."
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Based in India, I specialize in building high-performance web applications. My approach combines the structural discipline of Computer Science with the aesthetic finesse of modern Frontend Development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-white border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="serif text-3xl mb-12">Professional Experience</h3>
+            <div class="border-l-2 border-gold pl-8 py-2">
+                <span class="text-sm text-gray-400 uppercase tracking-widest">Internship</span>
+                <h4 class="text-2xl font-semibold mt-2">Code Alpha</h4>
+                <p class="text-amber-800 font-medium italic">Frontend Developer Intern</p>
+                <p class="mt-4 text-gray-600 max-w-2xl">
+                    Worked on scalable UI components and optimized web performance, ensuring seamless user journeys across diverse digital platforms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="serif text-4xl mb-16 text-center italic">Selected Works</h3>
+            
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="group">
+                    <div class="overflow-hidden rounded-sm mb-6 shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" 
+                             alt="Well-being Hub" 
+                             class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest accent-gold font-bold">Health Tech / Full Stack</span>
+                            <h4 class="serif text-2xl mt-2">Well-Being Hub</h4>
+                            <p class="text-gray-500 mt-3 text-sm leading-relaxed">
+                                A comprehensive wellness ecosystem featuring therapy booking, integrated Zoom calls, and a curated marketplace for self-help and nutrition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="overflow-hidden rounded-sm mb-6 shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" 
+                             alt="Queue System" 
+                             class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest accent-gold font-bold">Utility / Logic</span>
+                            <h4 class="serif text-2xl mt-2">Digital Queue System</h4>
+                            <p class="text-gray-500 mt-3 text-sm leading-relaxed">
+                                Revolutionizing clinic visits by allowing patients to secure virtual tokens from home, drastically reducing physical waiting room congestion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-onyx text-cream">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="serif text-5xl md:text-7xl mb-12 italic">Let's connect.</h3>
+            <div class="space-y-6">
+                <a href="mailto:bariprajval.1015@gmail.com" class="block text-2xl md:text-4xl font-light hover:text-amber-500 transition-colors border-b border-gray-800 pb-4">
+                    bariprajval.1015@gmail.com
+                </a>
+                <a href="tel:7434815860" class="block text-xl md:text-2xl font-light text-gray-400 hover:text-white transition">
+                    +91 7434815860
+                </a>
+            </div>
+            
+            <div class="mt-20 pt-10 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-gray-500">
+                <p>&copy; 2026 Bari Prajval</p>
+                <div class="flex space-x-8 mt-6 md:mt-0">
+                    <a href="https://github.com" class="hover:text-white transition">GitHub</a>
+                    <a href="https://linkedin.com" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
